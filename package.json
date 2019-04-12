@@ -1,0 +1,15 @@
+{
+  "name": "paket-tool",
+  "version": "1.0.0",
+  "description": "Installs Paket dotnet tool",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node install.js",
+    "format": "prettier install.js --write"
+  },
+  "author": "nojaf",
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
