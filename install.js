@@ -46,4 +46,5 @@ if (fs.existsSync(path.join(projectDir, "paket.dependencies"))) {
   paketCmd("generate-load-scripts -f netstandard2.0 -t fsx");
 } else {
   console.log("No paket.dependencies file found in the project folder.");
+  paketCmd("init");
 }
